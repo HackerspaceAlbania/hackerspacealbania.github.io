@@ -1,0 +1,371 @@
+/* GRID FOR THE SECOND SECTION CARD + PARTNERS */
+div.grid-second{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    /* gap: 10px; */
+    margin: auto;
+    height: 1950px;
+    justify-items: center;
+}
+/* MAKING CARDS FLEX */
+div.cards-www{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+/* CARD STYLES */
+div.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    height: 450px;
+    width: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+/* PARTNER STYLES */
+div.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background: #F8F9FA;
+    margin-top: 65px;
+}
+/* PARTNER FLEX AND GRAYSCALE */
+ul.partners-carousel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    max-width: 350px;
+}
+ul.partners-carousel::-webkit-scrollbar {
+  display: none;
+}
+/* IDK WTF THIS IS BUT I GUESS TO ADD SPACE TO STUFF , I GOTTA SHIT LOADS OF MEDIA QUERIES LATER THO*/
+ul.partners-carousel li{
+    margin: 0 50px;
+    margin-top: 30px;
+    list-style: none;
+}
+/* OBVIOUSLY GRAYSCALE */
+ul.partners-carousel li img{
+    filter: grayscale(100%);
+}
+img.gray:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+}
+h1.partners{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    /* identical to box height, or 30px */
+    letter-spacing: 0.05em;
+    color: #031B4E;
+}
+/* CARDS CONTENT */
+h1.cards{
+    margin-top: 20px;
+    font-size: 24px;
+    /* identical to box height, or 24px */
+    letter-spacing: 0.05em;
+    color: #031B4E;
+    cursor: default;
+}
+/* P TAG STYLES IN CARDS */
+p.cards, a.cards{
+    max-width: 280px;
+    height: 45%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    max-height: 100vh;
+    color: #525666;
+    cursor: default;
+}
+a.cards{
+    height: 0px;
+}
+div.card a{
+    cursor: pointer;
+}
+
+/* GRID FOR THE THIRD SECTION DON'T FORGET TO FIX IT THROUGH THE MEDIA QUERIES */
+section.section-3{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    /* gap: 10px; */
+    height: 1000px;
+    justify-items: center;
+}
+/* WRAPPER, IDK WHAT THIS IS ATM */
+div.firsts3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+/* BUTTON STYLES */
+button.s3buttons{
+    all: unset;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 26px 20px;
+    height: 48px;
+    border-top: 4px solid;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #031B4E;
+    max-width: 150px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+div.s3buttons{
+    display: flex;
+}
+button.active{
+    border-color: #016AFF;
+    transition: all 0.5s ease;
+}
+div.what-people-do{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    max-width: 400px;
+}
+div.what-people-do::-webkit-scrollbar {
+    display: none;
+}
+div.pictures{
+    margin: 0px 10px;
+}
+h1.pictures{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #031B4E;
+}
+/* NEWSLETTER STYLES */
+/* H1 NEWSLETTER STYLES */
+h1.newsletter{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    /* identical to box height, or 54px */
+    letter-spacing: 0.05em;
+    color: #031B4E;
+}
+div.newsletter{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+div.newsletter img{
+    display: none;
+    margin-right: 25px;
+}
+div.newsletter-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+/* NEWSLETTER CONTENT TEXT */
+p.newsletter{
+    text-align: center;
+    width: 350px;
+    height: 125px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #525666;
+    margin-bottom: 20px;
+}
+/* VERY FUCKING CAREFUL */
+/* FORM STYLES */
+form{
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    width: 350px;
+}
+input {
+    font-family: Montserrat;
+    font-size: 14px;
+    outline: none;
+    padding-bottom: 10px;
+}
+.newsletter-signup {
+    margin-left: 0;
+    width: 350px;
+    justify-content: center;
+    align-self: center;
+}
+.newsletter-signup .form {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.input {
+    width: 100%;
+    background: #ededed;
+    color: #031B4E;
+    padding: 14px 14px;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: transparent;
+    transition: all 0.3s ease-in;
+}
+.input:focus {
+    color: #031B4E;
+    background: #fff;
+    border-color: #016AFF;
+}
+label{
+    font-weight: 500;
+    font-size: 18px;
+    color: #031B4E;
+}
+/* SUBSCRIBE BUTTON STYLES */
+button.newsletter{
+    border: none;
+    outline: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 30px;
+    background: #016AFF;
+    /* SHADOW TO BE ANIMATED */
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+}
+/*  */
+h4.no-spam{
+    margin-top: 5px;
+    width: 350px;
+    height: 12px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    color: #525666;
+}
+/* FOOTER */
+/* FOOTER CONTAINER */
+footer{
+    background: #010E28;
+    width: 100%;
+}
+/* DIV FOOTER, FLEX, FIXED WIDTH */
+div.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-areas: "map map" "links links" "copyright copyright";
+    width: 100%;
+    height: 95vh;
+}
+div.footer-links{
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.footer-links a{
+    margin: 20px 0;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+h1.footer-links{
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+}
+div.map{
+    grid-area: map;
+    justify-self: center;
+    align-self: center;
+}
+div.copyright{
+    grid-area: copyright;
+    display: flex;
+    margin: auto;
+    padding: 50px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    width: 80%;
+}
+/* COPYRIGHT TEXT */
+div.copyright h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+/* OR HERE TEXT */
+h2.social{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16.5px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+div.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+/* ICON STYLES, MARGIN N SUCH */
+div.social a{
+    margin: 0 10px;
+}
+/* FIXING SHIT DONT MOVE */
+.glider-contain{
+    width: 85% !important;
+    margin-top: 12%;
+    margin-bottom: 5%;
+}
+.glider.next{
+    right: -50px;
+}
